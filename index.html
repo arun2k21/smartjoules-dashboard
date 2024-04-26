@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-light poppins-regular vh-100 overflow-hidden vw-100">
+    <nav class="nav navbar bg-light">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="Assets/SJPL Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+          <h3 class="fw-bold text-primary mt-1 logo-title">Smartjoules</h3>
+        </a>
+        <div class="dropdown position-relative">
+          <label>Site</label>
+          <label class="dropdown-btn btn btn-light" for="dropdown"> -Select- <span class="ms-2"><i
+                class="bi bi-caret-down-fill"></i></span></label>
+          <input type="checkbox" id="dropdown" class="d-none">
+          <ul class="dropdown-list shadow position-absolute top-100 list-group">
+            <a href="#" class="list-group-item cursor-pointer border-bottom">Apollo Main</a>
+            <a href="#" class="list-group-item cursor-pointer border-bottom">Apollo Main</a>
+            <a href="#" class="list-group-item cursor-pointer border-bottom">Apollo Main</a>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="navbar-nav">
+            <li class="nav-item"><div class="d-flex align-items-center gap-3"><i class="bi bi-person-circle fs-2"></i>Name Here</div></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+    <div class="container-fluid h-100 w-100">
+      <div class="d-flex h-100">
+        <input type="radio" id="one" class="d-none" name="tab" checked>
+        <input type="radio" id="two" class="d-none" name="tab">
+        <input type="radio" id="three" class="d-none" name="tab">
+        <input type="radio" id="four" class="d-none" name="tab">
+        <input type="radio" id="five" class="d-none" name="tab">
+        <input type="radio" id="six" class="d-none" name="tab">
+        <div class="nav-list w-20 p-2">
+          <label class="p-1 d-block first" for="one">
+            <div class="d-flex gap-2 align-items-center">
+              <div><i class="bi bi-chat-square-dots-fill"></i></div>
+              <div class="label-name">Complaints</div>
+            </div>
+          </label>
+          <label class="p-1 d-block second" for="two">
+            <div class="d-flex gap-2 align-items-center">
+              <div><i class="bi bi-people-fill"></i></div>
+              <div class="label-name">Client Conversations</div>
+            </div>
+          </label>
+          <label class="p-1 d-block third" for="three">
+            <div class="d-flex gap-2 align-items-center">
+              <div><i class="bi bi-tools"></i></div>
+              <div class="label-name">Internal Issues & Breakdown</div>
+            </div>
+          </label>
+          <label class="p-1 d-block fourth" for="four">
+            <div class="d-flex gap-2 align-items-center">
+              <div><i class="bi bi-calendar-check-fill"></i></div>
+              <div class="label-name">Preventive Maintenance</div>
+            </div>
+          </label>
+          <label class="p-1 d-block fifth" for="five">
+            <div class="d-flex justify-content gap-2">
+              <div><i class="bi bi-lightbulb-fill"></i></div>
+              <div class="label-name">Energy Efficiency</div>
+            </div>
+          </label>
+          <label class="p-1 d-block sixth" for="six">
+            <div class="d-flex gap-2 align-items-center">
+              <div><i class="bi bi-file-earmark-check-fill"></i></div>
+              <div class="label-name">SLA</div>
+            </div>
+          </label>
+        </div>
+        <div class="w-80 h-100 tab-content overflow-y-auto position-relative">
+          <div class="position-absolute tab-1 h-100">
+            <div class="row">
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="card h-200">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of
+                          Complaints</span></p>
+                      <div class="d-xxl-none">58</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Solved</span></p>
+                      <div class="d-xxl-none">58</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-danger"></i><span class="mx-2">Unsolved</span>
+                      </p>
+                      <div class="d-xxl-none">58</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-warning"></i><span class="mx-2">Critical</span>
+                      </p>
+                      <div class="d-xxl-none">58</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span
+                          class="mx-2">Non-Critical</span></p>
+                      <div class="d-xxl-none">58</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">Average
+                          Resolution Time for Complaints</span></p>
+                      <div class="d-xxl-none">58%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-2">
+                <div class="card h-200">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12 mb-2">
+                <div class="card rounded border-0 p-1 h-25-em">
+                  <div class="table overflow-y-auto">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Temperature Complaint</th>
+                          <th>Date</th>
+                          <th>Current Status RCA</th>
+                          <th>Next Steps</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quisquam, molestiae
+                            veritatis, doloribus, facere cumque repellendus non voluptatibus consectetur maiores aut.
+                            Sapiente doloribus fugit, aliquid harum cumque nisi quisquam ipsum?</td>
+                          <td class="text-nowrap">10 Apr</td>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et excepturi culpa cumque
+                            saepe error, vitae necessitatibus, harum deserunt voluptatibus nemo blanditiis? Nulla,
+                            assumenda? Ad debitis perferendis eum velit consequuntur?</td>
+                          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, cumque nemo!
+                            Consequuntur, alias placeat illum sed sequi, iste exercitationem inventore quo id a sapiente
+                            ipsum fuga, quos non! Magnam, nobis.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute tab-2 h-100">
+            <div class="row h-85">
+              <div class="col-12">
+                <div class="card h-100 rounded border-0 p-1">
+                  <div class="table overflow-y-auto">
+                    <table class="table table-responsive">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Details</th>
+                          <th>Next Steps</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-nowrap">10 Apr</td>
+                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
+                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
+                            fugiat possimus cupiditate sit culpa libero.</td>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
+                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
+                            necessitatibus velit eligendi, autem ipsam.</td>
+                        </tr>
+                        <tr>
+                          <td class="text-nowrap">10 Apr</td>
+                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
+                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
+                            fugiat possimus cupiditate sit culpa libero.</td>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
+                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
+                            necessitatibus velit eligendi, autem ipsam.</td>
+                        </tr>
+                        <tr>
+                          <td class="text-nowrap">10 Apr</td>
+                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
+                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
+                            fugiat possimus cupiditate sit culpa libero.</td>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
+                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
+                            necessitatibus velit eligendi, autem ipsam.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute tab-3" style="height: 97%;">
+            <div class="h-100 overflow-y-auto">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-250 mb-3">
+  
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-250 mb-3">
+  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-250 mb-3">
+  
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-250 mb-3">
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute tab-4 h-100">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="card rounded border-0 h-200 p-3 mb-3">
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of Issues
+                        Reported</span></p>
+                    <div class="d-xxl-none">13</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Percentage of
+                        issues resolved:</span></p>
+                    <div class="d-xxl-none">97%</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Mean time to
+                        resolve</span></p>
+                    <div class="d-xxl-none">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="card rounded border-0 h-200 p-3">
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of Issues
+                        Reported</span></p>
+                    <div class="d-xxl-none">13</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Percentage of
+                        issues resolved:</span></p>
+                    <div class="d-xxl-none">97%</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Mean time to
+                        resolve</span></p>
+                    <div class="d-xxl-none">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card rounded border-0 p-2 h-250">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">AHU</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">CASSETTE UNIT</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">CSU</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">TCU</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">TFA</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-6">
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">OT & ICUs</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-6">
+                          <div class="fw-bold text-end fs-14">Others</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute tab-5 h-100">
+            <div class="row h-85">
+              <div class="col-12">
+                <div class="card border-0 rounded p-2 h-100">
+                  <div class="d-flex justify-content-center">
+                    <table class="table table-responsive text-center">
+                      <tbody>
+                        <tr>
+                          <td>JouleCool Efficiency</td>
+                          <td>0.90</td>
+                        </tr>
+                        <tr>
+                          <td>Threshold Efficiency</td>
+                          <td>0.75</td>
+                        </tr>
+                        <tr>
+                          <td>Target Efficiency</td>
+                          <td>0.75</td>
+                        </tr>
+                        <tr>
+                          <td>Measured Efficiency</td>
+                          <td>0.75</td>
+                        </tr>
+                        <tr>
+                          <td>Efficiency Fees</td>
+                          <td>Rs. 68989</td>
+                        </tr>
+                        <tr>
+                          <td>Loss</td>
+                          <td>Rs -60056</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="position-absolute tab-6 h-100">
+            <div class="row h-85">
+              <div class="col-12">
+                <div class="card h-100 rounded border-0 p-2 overflow-auto">
+                  <table class="table table-responsive text-center align-middle">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Weight</th>
+                        <th>Target</th>
+                        <th>Weighted Target</th>
+                        <th>Achieved Score</th>
+                        <th>Weighted Achieved Score</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Comfort</td>
+                        <td>25 %</td>
+                        <td>5</td>
+                        <td>1.25</td>
+                        <td>5.00</td>
+                        <td>1.25</td>
+                      </tr>
+                      <tr>
+                        <td>Comfort</td>
+                        <td>25 %</td>
+                        <td>5</td>
+                        <td>1.25</td>
+                        <td>5.00</td>
+                        <td>1.25</td>
+                      </tr>
+                      <tr>
+                        <td>Comfort</td>
+                        <td>25 %</td>
+                        <td>5</td>
+                        <td>1.25</td>
+                        <td>5.00</td>
+                        <td>1.25</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end" colspan="5">Total Target Score</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end" colspan="5">Total Achieved Score</td>
+                        <td>5</td>
+                        </tr>
+                        <tr>
+                        <td class="text-end" colspan="5">Performance Rating</td>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<style>
+  .bg-light {
+    background: rgba(237, 242, 249, 0.96) !important;
+  }
+
+  .nav-list label {
+    color: #5e6e82;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .nav-list label:hover {
+    color: black;
+    transition: 0.3s;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .w-80 {
+    width: 80%;
+  }
+
+  #one:checked~.nav-list .first,
+  #two:checked~.nav-list .second,
+  #three:checked~.nav-list .third,
+  #four:checked~.nav-list .fourth,
+  #five:checked~.nav-list .fifth,
+  #six:checked~.nav-list .sixth {
+    color: #2c7be5;
+  }
+
+  .fs-11 {
+    font-size: 12px;
+  }
+
+  table thead th {
+    background: #f9fafd !important;
+    font-weight: 600;
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+  }
+
+  table tbody td {
+    font-size: 13px;
+  }
+
+  .fs-12{
+    font-size: 12px;
+  }
+  .fs-14{
+    font-size: 14px;
+  }
+  .tab-content .tab-1,
+  .tab-content .tab-2,
+  .tab-content .tab-3,
+  .tab-content .tab-3,
+  .tab-content .tab-4,
+  .tab-content .tab-5,
+  .tab-content .tab-6 {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .tab-content {
+    height: 500px;
+  }
+
+  #one:checked~.tab-content .tab-1,
+  #two:checked~.tab-content .tab-2,
+  #three:checked~.tab-content .tab-3,
+  #four:checked~.tab-content .tab-4,
+  #five:checked~.tab-content .tab-5,
+  #six:checked~.tab-content .tab-6 {
+    visibility: visible;
+    z-index: 10;
+    overflow-y: auto;
+  }
+
+  .card {
+    box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    border: none;
+  }
+
+  table {
+    align-items: center;
+    vertical-align: middle;
+  align-content: center;
+  }
+  .table-card {
+    height: 15em !important;
+  }
+
+  .h-200 {
+    height: 200px;
+  }
+
+  .h-25-em {
+    height: 25em;
+  }
+
+  .h-85 {
+    height: 85%;
+  }
+
+  .h-250 {
+    height: 250px;
+  }
+
+  .dropdown-btn:hover {
+    background: #f9fafd;
+  }
+
+  .dropdown .dropdown-list {
+    background: #fff;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #dropdown:checked~.dropdown-list {
+    visibility: visible !important;
+  }
+
+  .list-group .list-group-item :hover {
+    background: #cce2ff;
+    transition: all ease 0.3s;
+  }
+
+  @media (width < 724px) {
+    .nav-list label i{
+      font-size: 16px;
+    }
+    .nav-list label .label-name{
+      display: none;
+    }
+    .nav-list {
+      width: 10% !important;
+    }
+    .tab-content{
+      width: 90% !important;
+    }
+    .logo-title{
+      display: none;
+    }
+    table thead th{
+      font-size: 10px;
+    }
+    table tbody td{
+      font-size: 10px;
+    }
+    .dropdown-btn{
+      font-size: 13px;
+    }
+    nav label{
+      font-size: 13px;
+    }
+  }
+
+  /* primary #2c7be5 */
+</style>
+
+</html>
