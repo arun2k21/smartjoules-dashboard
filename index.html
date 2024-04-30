@@ -20,10 +20,14 @@
   <div class="bg-light poppins-regular vh-100 overflow-hidden vw-100">
     <nav class="nav navbar bg-light">
       <div class="container-fluid d-flex align-items-center justify-content-between">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="SJPL Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-          <h3 class="fw-bold text-primary mt-1 logo-title">Smartjoules</h3>
-        </a>
+        <div class="d-flex align-items-center gap-3">
+          <label for="bread" class="cursor-pointer"><i class="bi bi-list fs-3"></i></label>
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="SJPL Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <h3 class="fw-bold text-primary mt-1 logo-title">Smartjoules</h3>
+          </a>
+        </div>
+        
         <div class="dropdown position-relative">
           <label>Site</label>
           <label class="dropdown-btn btn btn-light" for="dropdown"> -Select- <span class="ms-2"><i
@@ -37,7 +41,9 @@
         </div>
         <div class="">
           <ul class="navbar-nav">
-            <li class="nav-item"><div class="d-flex align-items-center gap-3"><i class="bi bi-person-circle fs-2"></i>Name Here</div></li>
+            <li class="nav-item">
+              <div class="d-flex align-items-center gap-3"><i class="bi bi-person-circle fs-2"></i>Name Here</div>
+            </li>
           </ul>
         </div>
       </div>
@@ -51,6 +57,7 @@
         <input type="radio" id="four" class="d-none" name="tab">
         <input type="radio" id="five" class="d-none" name="tab">
         <input type="radio" id="six" class="d-none" name="tab">
+        <input type="checkbox" id="bread" class="d-none">
         <div class="nav-list w-20 p-2">
           <label class="p-1 d-block first" for="one">
             <div class="d-flex gap-2 align-items-center">
@@ -67,13 +74,13 @@
           <label class="p-1 d-block third" for="three">
             <div class="d-flex gap-2 align-items-center">
               <div><i class="bi bi-tools"></i></div>
-              <div class="label-name">Internal Issues & Breakdown</div>
+              <div class="label-name">Internal Issues</div>
             </div>
           </label>
           <label class="p-1 d-block fourth" for="four">
             <div class="d-flex gap-2 align-items-center">
               <div><i class="bi bi-calendar-check-fill"></i></div>
-              <div class="label-name">Preventive Maintenance</div>
+              <div class="label-name">Breakdown & Maintenance</div>
             </div>
           </label>
           <label class="p-1 d-block fifth" for="five">
@@ -91,44 +98,69 @@
         </div>
         <div class="w-80 h-100 tab-content overflow-y-auto position-relative">
           <div class="position-absolute tab-1 h-100">
-            <div class="fw-bold py-2">Complaints</div>
+            <div class="fw-bold">Complaints</div>
             <div class="row">
-              <div class="col-lg-6 col-12">
+              <div class="col-lg-8 col-12">
                 <div class="card h-200 mb-3">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of
-                          Complaints</span></p>
-                      <div class="d-xxl-none">58</div>
+                    <div class="row">
+                      <div class="col-lg-8 col-xl-8 col-xxl-8 col-12">
+                        <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                          <p class="mb-3 fs-12">No of
+                            Complaints</span></p>
+                          <div class="d-xxl-none">58</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
+                          <p class="mb-4 fs-12">Average
+                            Resolution Time for Complaints</p>
+                          <div class="d-xxl-none">58%</div>
+                        </div>
+                        <div class="mb-3">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="fs-12 fw-600">Critical</div>
+                            </div>
+                            <div class="col-6">
+                              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="fs-12 fw-600 text-end">60%</div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="mb-2">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="fs-12 fw-600">Non Critical</div>
+                            </div>
+                            <div class="col-6">
+                              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="fs-12 fw-600 text-end">60%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-xl-4 col-xxl-4 col-12">
+
+                      </div>
+
                     </div>
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Solved</span></p>
-                      <div class="d-xxl-none">58</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-danger"></i><span class="mx-2">Unsolved</span>
-                      </p>
-                      <div class="d-xxl-none">58</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-warning"></i><span class="mx-2">Critical</span>
-                      </p>
-                      <div class="d-xxl-none">58</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span
-                          class="mx-2">Non-Critical</span></p>
-                      <div class="d-xxl-none">58</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-1">
-                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">Average
-                          Resolution Time for Complaints</span></p>
-                      <div class="d-xxl-none">58%</div>
+                    <div class="row">
+                      <div class="col-12"></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-12">
+              <div class="col-lg-4 col-12">
                 <div class="card h-200 mb-3">
 
                 </div>
@@ -168,208 +200,168 @@
               </div>
             </div>
           </div>
-          <div class="position-absolute tab-2 h-100">
-            <div class="fw-bold py-2">Client Conversations</div>
+          <div class="position-absolute tab-2 h-85">
+            <div class="fw-bold">Client Conversations</div>
             <div class="row h-85">
               <div class="col-12">
                 <div class="card h-100 rounded border-0 p-1">
-                  <div class="table overflow-y-auto">
-                    <table class="table table-responsive">
-                      <thead>
-                        <tr>
-                          <th>Date</th>
-                          <th>Details</th>
-                          <th>Next Steps</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-nowrap">10 Apr</td>
-                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
-                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
-                            fugiat possimus cupiditate sit culpa libero.</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
-                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
-                            necessitatibus velit eligendi, autem ipsam.</td>
-                        </tr>
-                        <tr>
-                          <td class="text-nowrap">10 Apr</td>
-                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
-                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
-                            fugiat possimus cupiditate sit culpa libero.</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
-                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
-                            necessitatibus velit eligendi, autem ipsam.</td>
-                        </tr>
-                        <tr>
-                          <td class="text-nowrap">10 Apr</td>
-                          <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia inventore atque adipisci
-                            quae, eaque cumque. Perspiciatis obcaecati officia sequi doloremque, voluptate quis rerum
-                            fugiat possimus cupiditate sit culpa libero.</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil aliquid, ea at quae
-                            consectetur nemo ex veritatis cum harum saepe repellat ducimus adipisci voluptatem
-                            necessitatibus velit eligendi, autem ipsam.</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <iframe height='500px' name="test-frame" width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creatorapp.zohopublic.in/smartjoules/smart-joules-app/report-embed/All_Tests/QYDCnhEvxanzhwGtGFnChnGJ2u6252F6YQ4mqDxxBGEkbjZEn2x36PU49Tgkf7uqtxEyX2kvQqsQhTEVJPhJZ5AYh65eHumAhSw4'></iframe>
                 </div>
               </div>
             </div>
           </div>
-          <div class="position-absolute tab-3 overflow-hidden" style="height: 90%;">
-            <div class="fw-bold py-2">Interal Issues & Breakdown</div>
+          <div class="position-absolute tab-3 overflow-hidden h-85">
+            <div class="fw-bold">Internal Issues</div>
             <div class="h-100 overflow-y-auto">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
-                  <div class="card rounded border-0 h-250 mb-3">
-  
+                  <div class="card rounded border-0 h-200 mb-3 p-2">
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-danger"></i><span class="mx-2">No of Issues
+                          Reported</span></p>
+                      <div class="d-xxl-none">13</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Percentage of
+                          issues resolved:</span></p>
+                      <div class="d-xxl-none">97%</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">Mean time to
+                          resolve</span></p>
+                      <div class="d-xxl-none">0</div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
-                  <div class="card rounded border-0 h-250 mb-3">
+                  <div class="card rounded border-0 h-200 mb-3">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute tab-4 h-85 overflow-hidden">
+            <div class="fw-bold">Breakdown & Maintenance</div>
+            <div class="overflow-y-auto h-100 overflow-x-hidden">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-200 p-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">Frequency Rate of
+                          Breakdown</span></p>
+                      <div class="d-xxl-none">13</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Security
+                          Rate:</span></p>
+                      <div class="d-xxl-none">97%</div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
+                      <p class="mb-1"><i class="bi bi-circle-fill text-danger"></i><span class="mx-2">Breakdown
+                          Time</span></p>
+                      <div class="d-xxl-none">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <div class="card rounded border-0 h-200 p-3 mb-3">
   
                   </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-lg-6 col-xxl-6 col-xl-6">
+                  <div class="card border-0 h-200 mb-3"></div>
+                </div>
+                <div class="col-lg-6 col-xxl-6 col-xl-6">
+                  <div class="card border-0 h-200 mb-3"></div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="card rounded border-0 h-250 mb-3">
+                <div class="col-12">
+                  <div class="card rounded border-0 p-2 h-auto mb-5">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">AHU</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">CASSETTE UNIT</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">CSU</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">TCU</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">TFA</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                          </div>
+                        </div>
   
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="card rounded border-0 h-250 mb-3">
-  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="position-absolute tab-4 h-100">
-            <div class="fw-bold py-2">Preventive Maintenance</div>
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="card rounded border-0 h-200 p-3 mb-3">
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of Issues
-                        Reported</span></p>
-                    <div class="d-xxl-none">13</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Percentage of
-                        issues resolved:</span></p>
-                    <div class="d-xxl-none">97%</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Mean time to
-                        resolve</span></p>
-                    <div class="d-xxl-none">0</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="card rounded border-0 h-200 p-3 mb-3">
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-primary"></i><span class="mx-2">No of Issues
-                        Reported</span></p>
-                    <div class="d-xxl-none">13</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Percentage of
-                        issues resolved:</span></p>
-                    <div class="d-xxl-none">97%</div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center fw-semibold fs-11 mt-3">
-                    <p class="mb-1"><i class="bi bi-circle-fill text-success"></i><span class="mx-2">Mean time to
-                        resolve</span></p>
-                    <div class="d-xxl-none">0</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="card rounded border-0 p-2 h-250">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">AHU</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">OT & ICUs</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">CASSETTE UNIT</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
+                        <div class="row mt-3">
+                          <div class="col-6">
+                            <div class="fw-bold text-end fs-14">Others</div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">CSU</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">TCU</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">TFA</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="col-6">
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">OT & ICUs</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-6">
-                          <div class="fw-bold text-end fs-14">Others</div>
-                        </div>
-                        <div class="col-6">
-                          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%"></div>
+                          <div class="col-6">
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                              aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -378,9 +370,10 @@
                 </div>
               </div>
             </div>
+            
           </div>
           <div class="position-absolute tab-5 h-100">
-            <div class="fw-bold py-2">Energy Efficiency</div>
+            <div class="fw-bold">Energy Efficiency</div>
             <div class="row h-85">
               <div class="col-12">
                 <div class="card border-0 rounded p-2 h-100">
@@ -417,63 +410,65 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
-          <div class="position-absolute tab-6 h-100">
-            <div class="fw-bold py-2">SLA</div>
-            <div class="row h-85">
-              <div class="col-12">
-                <div class="card h-100 rounded border-0 p-2 overflow-auto">
-                  <table class="table table-responsive text-center align-middle">
-                    <thead>
-                      <tr>
-                        <th>Category</th>
-                        <th>Weight</th>
-                        <th>Target</th>
-                        <th>Weighted Target</th>
-                        <th>Achieved Score</th>
-                        <th>Weighted Achieved Score</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Comfort</td>
-                        <td>25 %</td>
-                        <td>5</td>
-                        <td>1.25</td>
-                        <td>5.00</td>
-                        <td>1.25</td>
-                      </tr>
-                      <tr>
-                        <td>Comfort</td>
-                        <td>25 %</td>
-                        <td>5</td>
-                        <td>1.25</td>
-                        <td>5.00</td>
-                        <td>1.25</td>
-                      </tr>
-                      <tr>
-                        <td>Comfort</td>
-                        <td>25 %</td>
-                        <td>5</td>
-                        <td>1.25</td>
-                        <td>5.00</td>
-                        <td>1.25</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" colspan="5">Total Target Score</td>
-                        <td>5</td>
-                      </tr>
-                      <tr>
-                        <td class="text-end" colspan="5">Total Achieved Score</td>
-                        <td>5</td>
+          <div class="position-absolute tab-6">
+            <div class="fw-bold">SLA</div>
+            <div class="">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card h-100 rounded border-0 p-2 overflow-auto">
+                    <table class="table table-responsive text-center align-middle">
+                      <thead>
+                        <tr>
+                          <th>Category</th>
+                          <th>Weight</th>
+                          <th>Target</th>
+                          <th>Weighted Target</th>
+                          <th>Achieved Score</th>
+                          <th>Weighted Achieved Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Comfort</td>
+                          <td>25 %</td>
+                          <td>5</td>
+                          <td>1.25</td>
+                          <td>5.00</td>
+                          <td>1.25</td>
                         </tr>
                         <tr>
-                        <td class="text-end" colspan="5">Performance Rating</td>
-                        <td>5</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          <td>Comfort</td>
+                          <td>25 %</td>
+                          <td>5</td>
+                          <td>1.25</td>
+                          <td>5.00</td>
+                          <td>1.25</td>
+                        </tr>
+                        <tr>
+                          <td>Comfort</td>
+                          <td>25 %</td>
+                          <td>5</td>
+                          <td>1.25</td>
+                          <td>5.00</td>
+                          <td>1.25</td>
+                        </tr>
+                        <tr>
+                          <td class="text-end" colspan="5">Total Target Score</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td class="text-end" colspan="5">Total Achieved Score</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td class="text-end" colspan="5">Performance Rating</td>
+                          <td>5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -520,7 +515,7 @@
   }
 
   .fs-11 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   table thead th {
@@ -535,12 +530,18 @@
     font-size: 13px;
   }
 
-  .fs-12{
-    font-size: 12px;
+  .fs-12 {
+    font-size: 12px !important;
   }
-  .fs-14{
+
+  .fs-14 {
     font-size: 14px;
   }
+
+  .fw-600 {
+    font-weight: 600;
+  }
+
   .tab-content .tab-1,
   .tab-content .tab-2,
   .tab-content .tab-3,
@@ -571,6 +572,20 @@
     overflow-y: auto;
   }
 
+  #bread:checked ~ .nav-list label .label-name {
+  display: none;
+  opacity: 0;
+  transition: all ease-out 0.2s;
+  }
+  #bread:checked ~ .nav-list{
+    width: 10%;
+    transition: all ease-in-out 0.2s;
+  }
+  #bread:checked ~ .tab-content{
+    width: 90%;
+    transition: all ease-in-out 0.2s;
+  }
+
   .card {
     box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
     border: none;
@@ -579,14 +594,15 @@
   table {
     align-items: center;
     vertical-align: middle;
-  align-content: center;
+    align-content: center;
   }
+
   .table-card {
     height: 15em !important;
   }
 
   .h-200 {
-    height: 200px;
+    height: 200px !important;
   }
 
   .h-25-em {
@@ -594,7 +610,7 @@
   }
 
   .h-85 {
-    height: 85%;
+    height: 85% !important;
   }
 
   .h-250 {
@@ -621,31 +637,39 @@
   }
 
   @media (width < 724px) {
-    .nav-list label i{
+    .nav-list label i {
       font-size: 16px;
     }
-    .nav-list label .label-name{
+
+    .nav-list label .label-name {
       display: none;
     }
+
     .nav-list {
       width: 10% !important;
     }
-    .tab-content{
+
+    .tab-content {
       width: 90% !important;
     }
-    .logo-title{
+
+    .logo-title {
       display: none;
     }
-    table thead th{
+
+    table thead th {
       font-size: 10px;
     }
-    table tbody td{
+
+    table tbody td {
       font-size: 10px;
     }
-    .dropdown-btn{
+
+    .dropdown-btn {
       font-size: 13px;
     }
-    nav label{
+
+    nav label {
       font-size: 13px;
     }
   }
